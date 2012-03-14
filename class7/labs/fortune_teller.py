@@ -14,3 +14,8 @@ you have a lot of tabs in your future
 $ python fortune_teller.py 
 you have a lot of tabs in your future
 """
+import random
+
+fortunes = ["he who sleeps with itchy ass wakes up with smelly fingers" , "When you squeeze an orange, orange juice comes out - because that's what's inside." , "You will live a long life and eat many fortune cookies."]
+index = random.randint(0,2)
+print "%s, %s" % (index,fortunes[index])
