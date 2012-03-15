@@ -24,7 +24,7 @@ Example Output:
 d = {}
 
 # add a key called "bob" to it, and set it equal to 21 (#4)
-d["bob"] - "21"
+d["bob"] = "21"
 
 # add a key called "sally" to it, and set it equal to 35 (#4)
 d["sally"] = "35"
@@ -33,15 +33,22 @@ d["sally"] = "35"
 print d["sally"]
 
 # use the get method to retrieve the value for a non-existent key named alice, default it to 0 (#5); assign to a variable named alice_score
+alice_score = d.get("alice_score", 0)
 
 # print out alice_score
+print alice_score
 
 # print out all of the keys in the dictionary (#6)
+print d.keys()
 
 # print out all of the values in the dictionary (#7)
+print d.values()
 
 # print out all of the key/value pairs in the dictionary as a list of tuples (#8)
+print d.items()
 
 # create a dictionary called more_scores, this time with the following key/value pairs... "eve" - 23, "sam" - 39 (#2)
+more_scores = {"eve": 23, "sam": 39}
 
 # print out more_scores
+print more_scores
