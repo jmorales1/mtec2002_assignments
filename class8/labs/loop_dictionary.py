@@ -18,3 +18,10 @@ title is Frankenstein.
 {'author': 'Frank Herbert', 'pages': 500, 'title': 'Dune'}
 {'author': 'Mary Shelley', 'pages': 278, 'title': 'Frankenstein'}
 """
+
+book1 = {'author': 'Frank Herbert', 'pages': 500, 'title': 'Dune'}
+book2 = {'author': 'Frank Herbert', 'pages': 500, 'title': 'Dune'}
+
+print book1.items()
+for k, v in book1.items():
+		print k, v
